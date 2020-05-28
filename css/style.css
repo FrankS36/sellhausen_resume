@@ -1,0 +1,49 @@
+body {
+  background: #333; /*gives background an almost black color */
+  color: #fff;
+}
+
+.navbar {
+  border-bottom: #008ed6 3px solid;
+  opacity: 0.8; /*this opacity gives it a little more style than just a solid line */
+}
+
+#home-section {
+  background: url(../img/network\ nodes.jpg); /*hook the bg image here */
+  background-repeat: no-repeat; /*so you don't see the annoying partial pics on side */
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 700px;
+}
+
+#home-section .dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 700px; /* same as parent element */
+  background: rgba(0, 0, 0, 0.7); /* use rgba to get opacity, 4th value is opacity */
+}
+
+#home-section .home-inner {
+  padding-top: 150px; /*brings the home inner class down below the nav bar */
+}
+
+#home-section .card-form {
+  opacity: 0.8;
+}
+
+/* style the FA icons in home section with custom CSS */
+#home-section .fas {
+  color: #008ed6;
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* could use html smooth scrolling, but it seems like there is more control with JS - just to keep in mind
+html {
+  scroll-behavior: smooth;
+} -->
+*/
+
